@@ -1,0 +1,177 @@
+:root
+{
+	--primary-color: #FE5252;
+	--xs: 767px;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background: #EAEFF2;
+}
+
+
+p
+{
+	margin: 0;
+}
+
+ul
+{
+	list-style: none;
+	margin: 0;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+
+
+/* Topbar Starts here */
+
+#topbar
+{
+	background: var(--primary-color);
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+
+/* .topbar-inner
+{
+
+} */
+
+.topbar-social
+{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.topbar-social-icons li
+{
+	display: inline;
+	margin-left: 5px;
+	color: white;
+}
+
+.topbar-social-icons li:hover
+{
+	color: black;
+}
+
+/* for mobiles */
+@media only screen and (max-width: 767px)
+{
+	.topbar-social
+	{
+		justify-content: center;
+	}
+
+	.topbar-social-icons li
+	{
+		padding-left: 15px;
+	}
+}
+
+/* Topbar Ends here */
+
+/* Header middle starts here */
+
+#header-middle
+{
+	background: white;
+}
+
+.header-middle-inner .main-logo img
+{
+	width: 50%;
+}
+
+.header-middle-inner i
+{
+	font-size: 25px;
+	color: var(--primary-color);
+	margin-left: 20px;
+}
+
+.header-middle-inner i:hover
+{
+	color: black;
+}
+
+
+/* Header middle ends here */
+
+/* Main navbar starts here */
+
+#main-navbar
+{
+	background: var(--primary-color);
+}
+
+.main-navbar-search button
+{
+	border-color: white;
+	margin-left: 2px;
+}
+
+.main-navbar-search button:hover
+{
+	background-color: black;
+	border-color: white;
+	background: black;
+}
+
+.main-navbar-search button:active
+{
+	background-color: black;
+	border-color: white;
+}
+
+@media only screen and (max-width: 767px)
+{
+	.header-middle-inner .main-logo
+	{
+		display: flex;
+		justify-content: center;
+	}
+
+	.main-navbar-search .form-control
+	{
+		height: calc(1.0em + 0.75rem + 2px);
+	}
+
+	.main-navbar-search input
+	{
+		width: 70%;
+	}
+
+	.main-navbar-search button
+	{
+		font-size: 10px;
+	}
+
+}
+
+/* Main navbar ends here */
+
+/* Header bottom starts here */
+
+#header-bottom .container
+{
+	background: var(--primary-color);
+	margin-top: 20px;
+	height: 50px;
+	line-height: 50px;
+}
+
+
+/* Header bottom ends here */
